@@ -1,8 +1,8 @@
 const form = document.getElementbyId("form");
-const username = document.getElementbyId("Username");
-const email = document.getElementbyId("Email");
-const password = document.getElementById("Password");
-const password2 = document.getElementById("Password2");
+const username = document.getElementbyId("username");
+const email = document.getElementbyId("email");
+const password = document.getElementById("password");
+const password2 = document.getElementById("password2");
 
 // Event listeners
 form.addEventListener("submit", function(e)  {
@@ -47,7 +47,7 @@ form.addEventListener("submit", function(e)  {
 function showError(input, message) 
 {
     const formControl = input.parentElement;
-    formControl.classname = "form-control error";
+    formControl.className = "form-control error";
     const small = formControl.querySelector("small");
     small.innerText = message;
 }
